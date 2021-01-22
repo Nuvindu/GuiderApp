@@ -78,7 +78,7 @@ public class ScrollingActivity extends AppCompatActivity {
                     usageMinutes = (time%3600000)/60000;
                     usageTime = usageHours+"H " + usageMinutes + "min";
                 }
-                else if(60000 <time && time < 3600000){
+                else if(60000 <= time && time < 3600000){
                     usageMinutes = time/ 60000;
                     usageTime = usageMinutes + "min";
                 }

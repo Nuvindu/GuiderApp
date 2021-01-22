@@ -54,15 +54,13 @@
             app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
         <ImageView
-            android:id="@+id/menu_apps_action_settingss"
+            android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#E9390202"
-            android:gravity="center"
             android:scaleType="center"
-            app:srcCompat="@drawable/ic_settings_white_24dp"
-            tools:ignore="VectorDrawableCompat" />
+            app:srcCompat="@android:drawable/star_big_on" />
 
         <ImageView
             android:id="@+id/graphs"
@@ -73,14 +71,17 @@
             android:scaleType="centerInside"
             app:srcCompat="@drawable/sandclock_icon_white" />
 
+
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/menu_apps_action_settingss"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#E9390202"
+            android:gravity="center"
             android:scaleType="center"
-            app:srcCompat="@android:drawable/star_big_on" />
+            app:srcCompat="@drawable/ic_settings_white_24dp"
+            tools:ignore="VectorDrawableCompat" />
 
     </LinearLayout>
 
