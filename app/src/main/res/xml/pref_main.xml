@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-   <Preference
-        android:key= "@string/pref_app_time_key"
-        android:title="@string/pref_app_time_label">
-        <intent
-            android:targetPackage="com.addie.timesapp"
-            android:targetClass="com.addie.timesapp.ui.DialogActivity">
-            <extra android:name="calling_class" android:value="SettingsFragment" />
-        </intent>
-    </Preference>
-    <CheckBoxPreference
-        android:key="@string/pref_shortcut_icon_key"
-        android:summary="@string/pref_shortcut_icon_hint"
-        android:title="@string/pref_shortcut_icon"
-        android:defaultValue="true" />
+
+
 
     <CheckBoxPreference
         android:key="@string/pref_notification_done_key"
@@ -26,16 +14,7 @@
         android:summary="@string/pref_flip_long_press_hint"
         android:title="@string/pref_flip_long_press"
         android:defaultValue="false" />
-    <Preference
-        android:key= "@string/pref_tutorial_key"
-        android:title="@string/pref_tutorial_label">
-        <intent
-            android:targetPackage="com.addie.timesapp"
-            android:targetClass="com.addie.timesapp.ui.IntroActivity">
-            <extra android:name="calling_class" android:value="SettingsFragment" />
-            <extra android:name="@string/intro_activity_mode" android:value="intro_activity_mode_tutorial" />
-        </intent>
-    </Preference>
+
 
 
 </PreferenceScreen>

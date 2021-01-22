@@ -21,6 +21,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.AsyncTaskLoader;
 import androidx.loader.content.Loader;
@@ -94,6 +95,9 @@ public class MainActivity extends AppCompatActivity implements AppAdapter.AppOnC
         if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.Q && !preferences.contains(getString(R.string.pref_overlay_permission_update))){
             displayOverlayPermissionScreen();
         }
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_layout);
         mainMenus = findViewById(R.id.main_menus);
         settingsMenus = findViewById(R.id.menu_apps_action_settingss);
         graphMenus = findViewById(R.id.graphs);
@@ -264,12 +268,12 @@ public class MainActivity extends AppCompatActivity implements AppAdapter.AppOnC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_apps_action_refresh_list:
-                refreshAppsList();
-                break;
-//            case R.id.menu_apps_action_settings:
-//                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+//            case R.id.menu_apps_action_refresh_list:
+//                refreshAppsList();
 //                break;
+            case R.id.advices:
+                startActivity(new Intent(MainActivity.this, AdviceActivity.class));
+                break;
 //            case R.id.report:
 //                startActivity(new Intent(MainActivity.this, Report.class));
 //                break;

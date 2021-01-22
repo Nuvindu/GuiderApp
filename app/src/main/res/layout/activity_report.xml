@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E9390202"
+            android:background="#4a3139"
             android:scaleType="center"
             app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E9390202"
+            android:background="#4a3139"
             android:scaleType="center"
             app:srcCompat="@android:drawable/star_big_on" />
 
@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E9390202"
+            android:background="#4a3139"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/app_icon_large" />
 
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E9390202"
+            android:background="#4a3139"
             android:gravity="center"
             android:scaleType="center"
             app:srcCompat="@drawable/ic_settings_white_24dp"

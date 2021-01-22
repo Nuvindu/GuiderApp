@@ -2,6 +2,7 @@ package com.SEproject.guiderapp.ui;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -46,6 +47,8 @@ public class MonthlyActivity extends AppCompatActivity {
         dbhandle = new DbHandler(context);
         applist =  dbhandle.getMonthData();
 
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_layout);
         listview = findViewById(R.id.listView);
         datess = new getDays().returnValues();
         CustomAdapter3 adapter = new CustomAdapter3(this,date,image,viewusage,datess,applist);

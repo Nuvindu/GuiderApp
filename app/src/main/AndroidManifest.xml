@@ -2,13 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.SEproject.guiderapp">
-
     <!-- Permissions needed to access current app in use -->
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
@@ -22,15 +21,19 @@
         android:theme="@style/AppTheme"
         tools:node="replace"
         tools:replace="android:icon">
-        <activity android:name="com.SEproject.guiderapp.ui.MonthlyActivity"></activity>
-        <activity android:name="com.SEproject.guiderapp.ui.WeeklyActivity" />
-        <activity android:name="com.SEproject.guiderapp.ui.Report" />
-        <activity android:name="com.SEproject.guiderapp.ui.ScrollingActivity" />
         <activity
-            android:name="com.SEproject.guiderapp.ui.MainActivity"
+            android:name=".ui.AdviceActivity"
+            android:label="@string/title_activity_advice"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ui.MonthlyActivity" />
+        <activity android:name=".ui.WeeklyActivity" />
+        <activity android:name=".ui.Report" />
+        <activity android:name=".ui.ScrollingActivity" />
+        <activity
+            android:name=".ui.MainActivity"
             android:launchMode="singleTask" />
         <activity
-            android:name="com.SEproject.guiderapp.ui.DialogActivity"
+            android:name=".ui.DialogActivity"
             android:autoRemoveFromRecents="true"
             android:noHistory="true"
             android:theme="@style/AnimatedDialog"
@@ -44,12 +47,12 @@
         </activity>
 
         <provider
-            android:name="com.SEproject.guiderapp.data.generated.AppProvider"
+            android:name=".data.generated.AppProvider"
             android:authorities="${applicationId}"
             android:exported="false" />
 
         <receiver
-            android:name="com.SEproject.guiderapp.widget.AppIconWidget"
+            android:name=".widget.AppIconWidget"
             android:label="Timed App">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -60,36 +63,36 @@
                 android:resource="@xml/app_icon_widget_info" />
         </receiver>
 
-        <activity android:name="com.SEproject.guiderapp.widget.AppIconWidgetConfigureActivity">
+        <activity android:name=".widget.AppIconWidgetConfigureActivity">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
 
         <service
-            android:name="com.SEproject.guiderapp.service.LaunchAppFromWidgetService"
+            android:name=".service.LaunchAppFromWidgetService"
             android:exported="false" />
 
         <activity
-            android:name="com.SEproject.guiderapp.ui.SettingsActivity"
-            android:parentActivityName="com.SEproject.guiderapp.ui.MainActivity">
+            android:name=".ui.SettingsActivity"
+            android:parentActivityName=".ui.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.SEproject.guiderapp.ui.MainActivity" />
         </activity>
 
         <service
-            android:name="com.SEproject.guiderapp.service.AppTimeDialogService"
+            android:name=".service.AppTimeDialogService"
             android:exported="false" />
 
         <activity
-            android:name="com.SEproject.guiderapp.ui.ForegroundServiceActivity"
+            android:name=".ui.ForegroundServiceActivity"
             android:noHistory="true" />
         <activity
-            android:name="com.SEproject.guiderapp.ui.IntroActivity"
+            android:name=".ui.IntroActivity"
             android:theme="@style/AppFullScreenTheme" />
         <activity
-            android:name="com.SEproject.guiderapp.ui.SplashActivity"
+            android:name=".ui.SplashActivity"
             android:noHistory="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -100,7 +103,7 @@
         </activity>
 
         <service
-            android:name="com.SEproject.guiderapp.service.SaveAppsInDbService"
+            android:name=".service.SaveAppsInDbService"
             android:exported="false" />
     </application>
 

@@ -2,6 +2,7 @@ package com.SEproject.guiderapp.ui;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -49,6 +50,9 @@ public class Report extends AppCompatActivity {
         context = this;
         dbhandle = new DbHandler(context);
         applist = dbhandle.getData();
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_layout);
 
         listview = findViewById(R.id.listView);
         datess = new getDays().returnValues();

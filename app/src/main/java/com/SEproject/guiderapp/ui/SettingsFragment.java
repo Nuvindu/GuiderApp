@@ -37,7 +37,7 @@ public class SettingsFragment extends PreferenceFragmentCompat
             if(p instanceof ListPreference){
 
                 String value = sharedPreferences.getString(p.getKey(), "");
-                Timber.d(value);
+                //Timber.d(value);
                 setPreferenceSummary(p, value);
             }
             if (Objects.equals(p.getKey(), getString(R.string.pref_app_time_key))){

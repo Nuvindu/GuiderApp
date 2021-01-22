@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.SEproject.guiderapp.R;
@@ -66,7 +67,8 @@ public class ScrollingActivity extends AppCompatActivity {
         mainMenu = findViewById(R.id.main_menu);
         settingsMenu = findViewById(R.id.menu_apps_action_settings);
         graphMenu = findViewById(R.id.graph);
-
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_layout);
         // Date date = new Date();
         String date = new SimpleDateFormat("yyyy.MM.dd", Locale.getDefault()).format(new Date());
         if(applist.size()>0){

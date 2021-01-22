@@ -3,6 +3,7 @@ package com.SEproject.guiderapp.ui;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -50,6 +51,9 @@ public class WeeklyActivity extends AppCompatActivity {
         applist = dbhandle.getData();
         CustomAdapter2 adapter = new CustomAdapter2(this,date,image,viewusage,datess,applist);
         listview.setAdapter(adapter);
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_layout);
 
         textDaily = findViewById(R.id.dailyView);
         textWeekly = findViewById(R.id.weeklyView);
