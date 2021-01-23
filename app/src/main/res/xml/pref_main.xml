@@ -3,18 +3,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-
     <CheckBoxPreference
         android:key="@string/pref_notification_done_key"
         android:summary="@string/pref_notification_done_hint"
         android:title="@string/pref_notification_done"
-        android:defaultValue="false" />
-    <CheckBoxPreference
-        android:key="@string/pref_flip_long_press_key"
-        android:summary="@string/pref_flip_long_press_hint"
-        android:title="@string/pref_flip_long_press"
-        android:defaultValue="false" />
-
+        android:defaultValue="true" />
 
 
 </PreferenceScreen>

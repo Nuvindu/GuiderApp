@@ -268,9 +268,9 @@ public class MainActivity extends AppCompatActivity implements AppAdapter.AppOnC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-//            case R.id.menu_apps_action_refresh_list:
-//                refreshAppsList();
-//                break;
+            case R.id.menu_apps_action_refresh_list:
+                refreshAppsList();
+                break;
             case R.id.advices:
                 startActivity(new Intent(MainActivity.this, AdviceActivity.class));
                 break;

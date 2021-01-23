@@ -50,7 +50,6 @@
     <string name="permission_granted">Permission Granted</string>
     <string name="pref_display_tap_target_time_dialog">display_tap_target_time_dialog</string>
     <string name="pref_tutorial_key">pref_tutorial_key</string>
-    <string name="pref_tutorial_label">Display tutorials</string>
     <string name="intro_page2_title">Replace app shortcuts</string>
     <string name="intro_page2_desc">Add new app shorcuts to the home screen using &appname;</string>
     <string name="intro_page3_title">Set a timer</string>
@@ -62,15 +61,15 @@
     <string name="intro_page1_desc">Take control of your phone usage</string>
     <string name="notif_app_stopped_channel_name">App Stopped Notification</string>
     <string name="pref_notification_done_key">pref_notification_done</string>
-    <string name="pref_notification_done_hint">Add button in notification to stop timer</string>
-    <string name="pref_notification_done">Stop timer button</string>
+    <string name="pref_notification_done_hint">Stop the background process</string>
+    <string name="pref_notification_done">Stop the Count Button</string>
     <string name="pref_flip_long_press_key">pref_flip_long_press_key</string>
     <string name="pref_flip_long_press_hint">Add shortcuts using long click\nLaunch app on single click</string>
     <string name="pref_flip_long_press">Flip long click action</string>
     <string name="intro_activity_mode">intro_activity_mode</string>
     <string name="intro_activity_mode_tutorial">intro_activity_mode_tutorial</string>
     <string name="intro_activity_mode_overlay_update">intro_activity_mode_overlay</string>
-    <string name="advise1">Not in control  (Normal Usage 5-10 hours per day)</string>
+    <string name="advise1">Not in control  (Normal Usage more than 5 hours per day)</string>
     <string name="advise2">On Right Way(Normal Usage 2-5 hours per day)</string>
     <string name="advise3">In control(Normal Usage lower 2 hours per day)</string>
     <string name="advise4">Take a rest and refresh the mind</string>
