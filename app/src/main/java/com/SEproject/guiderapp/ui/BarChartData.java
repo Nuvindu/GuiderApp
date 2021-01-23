@@ -37,7 +37,7 @@ public class BarChartData {
 
         HashMap<String, Integer> total_hash = new TheHashMap().getDbData(list);
 
-        for (int i=0; i< total_hash.size(); i++){
+        for (int i=total_hash.size()-1; i>=0 ; i--){
             timeHourArrayList.add(new BarChartData(list.get(i).getUsage()/3600000, list.get(i).getDate()));
         }
 

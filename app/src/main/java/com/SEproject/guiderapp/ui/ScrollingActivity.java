@@ -72,8 +72,8 @@ public class ScrollingActivity extends AppCompatActivity {
         // Date date = new Date();
         String date = new SimpleDateFormat("yyyy.MM.dd", Locale.getDefault()).format(new Date());
         if(applist.size()>0){
-            int time = applist.get(applist.size()-1).getUsage();
-            if(applist.get(applist.size()-1).getDate().equals(date)){
+            int time = applist.get(0).getUsage();
+            if(applist.get(0).getDate().equals(date)){
                 int usageHours, usageMinutes;
                 if(time >= 3600000 ){
                     usageHours = time/3600000;
@@ -100,7 +100,7 @@ public class ScrollingActivity extends AppCompatActivity {
             if(topfive.get(i).getUsage() >= 3600000){
                 usage = "Usage: "+ topfive.get(i).getUsage() / 3600000 +"H " + (topfive.get(i).getUsage()%3600000)/60000 + "min" ;
             }
-            else if (60000 <topfive.get(i).getUsage() && topfive.get(i).getUsage() < 3600000){
+            else if (60000 <= topfive.get(i).getUsage() && topfive.get(i).getUsage() < 3600000){
                 usage = "Usage: "+ topfive.get(i).getUsage() / 60000 +"min";
             }
             else{
