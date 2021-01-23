@@ -39,6 +39,7 @@ No data is saved and this permission is only used at the end of time limit.
 
 ### **Screenshots:**
 
-<img src ="screenshots/start.jpeg" width="300" heigth="400">   <img src ="screenshots/home.jpeg" width="300" heigth="400"> <img src ="screenshots/report.jpeg" width="300" heigth="400">
-<img src ="screenshots/summery.jpeg" width="300" heigth="400">   <img src ="screenshots/schedule_time.jpeg" width="300" heigth="400"> <img src ="screenshots/notification.jpeg" width="300" heigth="400">
+<img src ="screenshots/start.jpeg" width="280" heigth="380">   <img src ="screenshots/home.jpeg" width="280" heigth="380"> <img src ="screenshots/report.jpeg" width="280" heigth="380">
+<img src ="screenshots/summery.jpeg" width="300" heigth="400">  <img src ="screenshots/advice.jpeg" width="300" heigth="400">
+<img src ="screenshots/schedule_time.jpeg" width="300" heigth="400"> <img src ="screenshots/notification.jpeg" width="300" heigth="400">
 
